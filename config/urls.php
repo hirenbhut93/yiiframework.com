@@ -8,7 +8,6 @@ return [
     'captcha' => 'site/captcha',
     'about' => 'site/about',
     'license' => 'site/license',
-    'news' => 'site/news',
     'team' => 'site/team',
     'wiki' => 'site/wiki',
     'report-issue' => 'site/report-issue',
@@ -20,6 +19,11 @@ return [
     'logo' => 'site/logo',
     'tour' => 'site/tour',
     'resources' => 'site/resources',
+
+	'news' => 'news/index',
+	'news/<id:\d+>/<name>' => 'news/view',
+	'news/<id:\d+>' => 'news/view',
+	'news/<action:\w+>' => 'news/<action>',
 
     'download/<category:[\w-]+>/<file:[\w\d-.]+>' => 'site/file',
 
